@@ -1,0 +1,178 @@
+*{box-sizing: border-box;}
+
+.header{
+  height: auto;
+  width: 100%;
+  background-color: #31112c;
+  position: sticky;
+}
+
+.header .inner{
+  font-family: 'Sacramento', cursive;
+  font-size: 90px;
+  height: 80%;
+  color: #ffe2e2;
+}
+
+#logo2{
+  color: #e1e7f0;
+}
+.dropdown .button{
+  font-family: 'Comfortaa', cursive;
+  background-color: #e1e7f0;
+  color: #31112c;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 4px;
+  padding: 7px;
+  margin: 7px;
+  font-weight: bold;
+}
+
+.dropdown .button:hover{
+  border-color: #ffe2e2;
+}
+
+.body{ 
+  display: table;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.body .inner, .body .slide{
+  width: 40%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  display: table-cell;
+  margin-left: 100px; 
+}
+
+.body .inner {
+  margin-top: 60px;
+  margin-bottom: 20px; 
+  background-size: contain;
+  height: 80vh;
+  width: 85vh;
+  background-color: #f6f6f6;
+  transform: rotate(45deg);
+} 
+
+.body .inner img{
+  transform: rotate(-45deg); 
+  padding-top: 20%; 
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.footer{
+  height: 30vh;
+  width: 100%;
+  background-color: #31112c;
+  display: table;
+}
+
+.footer .inner{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.footer .inner .button{
+  background-image: linear-gradient(rgba(236, 216, 234, 0.788),  #e1e7f0b4 70%, rgba(236, 216, 234, 0.788));
+  color: #31112c;
+  cursor: pointer;
+}
+
+body {
+  background-color: #ffe2e2b4;
+  margin: 0;
+}
+
+.mySlides{
+  display: none;
+}
+
+.prev, .next {
+  margin: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: #f6f6f6;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{  
+  left: -20px;
+}
+
+.next{
+  border-radius: 3px 0 0 3px;
+  right: -20px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 5px 12px;
+  position: relative;
+  top: 25px;
+}
+
+.body .mySlides img{
+  border: none;
+  height: 75vh;
+  width: 60vw;
+  background-size: contain;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.Active, .dot:hover{
+  background-color: #31112c;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media(max-width:1439px){
+    .body .inner{
+      width: 70vw;
+      height: 70vw;
+      margin: 15%;
+      overflow: hidden;
+    }
+    .body .slide{
+      width: 80%;
+      height: 100vh;
+      margin: 10%;
+    }
+}

@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: lightsalmon;
+    align-items: center;
+}
+
+.head{
+    width: 100%;
+    height: auto;
+    font-weight: 400;
+    font-size: 26px;
+    font-family: 'Monoton', cursive;
+}
+
+.box table{
+    width: 100%;
+    height: 80vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-spacing: 30px 20px;
+}
+
+.box table tr td{
+  border: 10px ridge rgba(7, 47, 63, 0.897);  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  cursor: pointer;
+}
+
+.box table tr td:hover{
+  border: 10px outset rgba(180, 189, 48, 0.815); 
+}
+
+.content{
+  display: absolute;
+  text-align: justify;
+  font-size: 44px; 
+  background-color: rgba(243, 224, 202, 0.779); 
+  padding: 10px;
+  top: -100px;
+}
+
+
+#one{
+  background-image: url("https://previews.123rf.com/images/seamartini/seamartini1801/seamartini180100498/93370493-fast-food-poster-of-burgers-pizza-and-sandwiches-for-fastfood-restaurant-or-delivery-menu-template-v.jpg");  
+}
+
+#two{
+  background-image: url("https://previews.123rf.com/images/seamartini/seamartini1812/seamartini181200091/127240900-japanese-cuisine-poster-or-menu-for-traditional-japan-sushi-bar-or-restaurant-design-vector-asian-fo.jpg");
+}
+
+#three{
+  background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/65/ab/59/65ab59eb-e36b-9ced-4188-8cab966b75c9/source/512x512bb.jpg");
+  background-position: top;
+}
+
+#four{
+  background-image: url("https://graphicriver.img.customer.envatousercontent.com/files/297666388/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=082543181f7ae50444164c1ca018e8ae");
+}
+
+
+
+
+.heading ul{
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width: 50%;
+    height: 30%;
+}
+
+.heading ul li{
+    display: block;
+    list-style: none;
+    
+
+}
+
+.heading ul li img{
+  width: 300px;
+    height: 200px;
+  size: contain;
+}
+
+.prev, .next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.prev{
+    position: relative;
+    left: -95px;
+    top: -2px;
+}
+
+.next{
+    position: relative;
+    top: -45px;
+    right: -80px;
+}
+
+/*the modal background*/
+.modal{
+    display: none; /*hidden by default*/
+    position: fixed; /*stay in place*/
+    z-index: 1; /*sit on top*/
+    padding-top: 50px; /*location of box*/
+    left: 0;
+    top: 0;
+    width: 100%; /*full width*/
+    height: 100%; /*full height*/
+    overflow: auto; /*enable scroll if needed*/
+    background-color: rgba(0,0,0,0.4); /*black with opacity*/    
+}
+
+/*Modal content*/
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #888888;
+    width: 80%;
+    height: auto;
+    overflow: auto;
+}
+
+/*the close button*/
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, 
+.close:focus{
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 767px){ 
+  .content{
+  font-size: 10px; 
+  padding-bottom: 1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  
+  .content{
+  font-size: 16px; 
+  padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+  
+  .content{
+  font-size: 18px; 
+  padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
+ 
+.content{
+  font-size: 28px; 
+  padding-bottom: 0px;
+  }
+}
+

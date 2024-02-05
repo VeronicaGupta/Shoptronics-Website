@@ -1,0 +1,237 @@
+body{
+    margin:0px auto;
+    width: 100%;
+    font-family: 'Spartan';
+    font-weight: 400;
+    background: #838383;
+    
+}
+
+nav ul li{
+    list-style-type:none;
+    float: left;
+    padding-right: 2.5em;
+    color: floralwhite;
+    padding-bottom: 0.5em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+nav ul{
+    float: right;   
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    background-color:#838383; 
+    position: fixed;
+}
+
+section{
+    background-color: #838383;
+}
+
+.home{
+    background-color:#f7d6bf;
+    text-align: center;
+    font-size:48px;
+    color:#1b262c;
+    display: table;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.home .inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+.home .inner img{
+    border-radius: 100px;
+    width: 250px;
+    height: auto;
+}
+
+.about{
+    background-image: url('https://image.freepik.com/free-vector/geometric-shapes-wallpaper-realistic-design_23-2148430541.jpg');
+    display: table;
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: azure;
+}
+
+.about .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 47%;
+    float: left;
+    padding: 70px;
+    line-height: 50px;
+}
+
+.about h1, .edu h1, .hobbies h1, .skills h1, .contact h1{
+    font-size: 42px;
+}
+
+.about .inner p, .edu .inner div p, .hobbies .inner div p, .skills .inner div, .contact .inner .p{
+    font-size: 26px;
+}
+
+.edu{
+    background-color: white;
+    display: table;
+    height: 100vh;
+    width: 100%;    
+}
+
+.edu .inner, .hobbies .inner, .skills .inner, .contact .inner{
+    vertical-align: middle;
+    display: table-cell;
+    padding: 70px;
+    
+}
+
+.edu .inner div, .hobbies .inner div, .skills .inner div{    
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+}
+
+.edu .inner div img, .hobbies .inner div img, .contact .inner ul li img{
+    width: 120px;
+    height: 100px;
+    border-radius: 20px; 
+}
+
+.hobbies{
+    background-color: #ebecf1;
+    display: table;
+    height: 100vh;
+    width: 100%;    
+}
+
+.skills{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbNx2x5zyKkWjwRxdAtMb6Bl-W3aU7JZ1h3A&usqp=CAU'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 100vh;
+    width: 100%;    
+    color: antiquewhite;
+}
+
+
+.skills .inner div ul li{
+    list-style-type:none;
+    padding: 10px;
+}
+
+.contact{
+    background-color:#595238 ;
+    display: table;
+    height: 100vh;
+    width: 100%;  
+    color: beige;
+}
+
+.contact .inner ul li{    
+    list-style-type:none;
+    float: left;
+    padding-right: 2.5em;
+    padding-bottom: 1.5em;
+}
+
+.contact .inner ul li img{
+    border: 2px solid white;
+}
+
+@media(min-width:320px) and (max-width:767px){
+    .about .inner, .home .inner, .edu .inner, skills .inner{
+        padding: 30px;
+    }
+    .about .inner{
+        width: 85%;
+    }
+    .about .inner p{
+        font-size: 18px;
+        text-align: justify;        
+    }
+    .edu .inner div, .skills .inner div, .hobbies .inner div{
+        width: 100%;
+        border-bottom: 2px solid;
+        margin-bottom: 20px;
+    }
+    .contact .inner, .home .inner{
+        width: 100%
+    }
+}
+    
+
+@media(min-width:768px) and (max-width:1023px){
+    .about .inner{
+        width: 75%;
+    }
+    .about .inner p{
+        font-size: 28px;
+        text-align: justify;        
+    }
+}
+
+@media(min-width:1023px) and (max-width:1439px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
