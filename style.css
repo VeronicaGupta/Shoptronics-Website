@@ -1,0 +1,745 @@
+*{box-sizing: border-box;}
+
+body{
+    display: table;
+    margin: 0px;
+    width: 100%;
+    background: #1b262c;
+    /*rgba(158, 218, 198, 0.74);background-image: linear-gradient(32deg, rgba( 180, 248, 225, 0.973) 0%, white ,rgba(180, 248, 225, 0.973) 100%);*/
+}
+
+#logo{
+  position: absolute;
+  float: left;
+  font-family: 'Niconne', cursive;
+  font-size: 64px;
+  font-style: oblique;
+  top: 30px;
+  left: 0px;
+  width: 270px;
+  height: 85px;
+  border-radius: 50px;
+  border: 5px ridge rgba(100, 196, 164);
+  background-image: repeating-radial-gradient(rgba(27, 59, 47, 0.932),
+  rgb(195, 211, 233));
+  z-index: 1;
+  font-weight: normal;
+  padding: 2px;
+}
+
+/*login form*/
+.form1 {
+  display: none;
+  position: fixed;
+  width: 35%;
+  top: 150px;
+  left: 35%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;  
+  font-family: 'Comfortaa', cursive;
+}
+
+.form1 .inner {
+  padding: 10px;
+  background-color: #1b262c;
+  color: rgb(127, 255, 212);
+  font-size: 20px;
+}
+
+.form1 .inner input[type=text], .form1 .inner input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px; 
+}
+
+.form1 .inner input[type=text]:focus, .form1 .inner input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form1 .inner .btn {
+  background-color: rgb(77, 145, 80);
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.form1 .inner .cancel {
+  background-color: rgb(233, 101, 101);
+}
+
+/* Add some hover effects to buttons */
+.form1 .inner .btn:hover, #login:hover {
+  opacity: 1;
+}
+
+/*sign up*/
+.form2 {
+  display: none;
+  position: fixed;
+  width: 35%;
+  top: 30px;
+  left: 35%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;  
+  font-family: 'Comfortaa', cursive;
+}
+
+.form2 .inner {
+  padding: 10px;
+  background-color: #1b262c;
+  color: rgb(127, 255, 212);
+  font-size: 20px;
+}
+
+.form2 .inner input[type=text], .form2 .inner input[type=text1], .form2 .inner input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px; 
+}
+
+.form2 .inner input[type=text]:focus, .form2 .inner input[type=text1]:focus, .form2 .inner input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form2 .inner .btn {
+  background-color: rgb(77, 145, 80);
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.form2 .inner .cancel {
+  background-color: rgb(233, 101, 101);
+}
+
+.form2 .inner .btn:hover, #signup:hover {
+  opacity: 1;
+}
+
+#cart{
+  background-image: url(Cart.png);
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55px;
+  height: 44px;
+}
+
+#search{
+  width: 450px;
+  height: 31px;
+  border-radius: 8px;
+  border: 2px outset #10222c;
+}
+
+#search::placeholder{
+  color: rgb(17, 128, 91);
+}
+
+.header{
+  background-image: linear-gradient(#1b262c);/* 97%, rgba(58, 163, 128, 0.774) 3%);*/
+  width: 100%;
+  height: 70px;
+  color: rgb(127, 255, 212);
+  font-weight: bold;
+}
+
+.menu{
+  display: table;
+  position: relative;
+  background-image: linear-gradient(#1b262c);/* 97%, rgba(58, 163, 128, 0.774) 3%);*/
+  width: 100%;
+  height: 55px;
+  color: rgb(127, 255, 212);
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+
+.header nav ul, .menu nav ul{
+  position: relative;
+  float: right;
+}
+
+.header nav ul li{
+  float: left;  
+  list-style-type: none;
+  padding-left: 10px; 
+  padding-right: 14px;
+}
+
+.header nav ul li button{
+  background-image: radial-gradient(#1f333d 70%, rgb(90, 89, 89));
+  border: 2px double rgba(44, 122, 96, 0.774);
+  border-radius: 7px;
+  height: 44px; 
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.menu nav ul li{
+  float: left;  
+  list-style-type: none;
+  height: 28px;
+  margin-top: 5px; 
+  padding-left: 15px;
+  padding-right: 14px;
+  padding-bottom: 7px; ;
+}
+
+.menu nav ul li:not(:first-child){
+  padding-top: 5px;
+}
+
+.header nav ul li button, .menu nav ul li a{
+  text-decoration: none;
+  color: rgb(127, 255, 212);  
+}
+
+.menu nav ul li:not(:first-child):hover, .active{
+  cursor: pointer;
+  background-color:  rgba(89, 137, 143, 0.349);
+}
+
+.header nav ul li button:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.4);
+  border-top: 3px groove  rgb(54, 177, 136);
+  border-bottom: 5px groove rgb(83, 192, 156);
+}
+
+
+@media(max-width:768px){
+
+#menu{
+  display: none;
+}
+
+.dropdown{
+  float: right;
+}
+
+.dropbtn {
+  background-color: rgba(53, 231, 175, 0.829);
+  border-radius: 2px;
+  width: 60px;
+  height: 53px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5e7e7;
+  min-width: 100px;
+  right: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.11);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #c3e9c4e5;}
+}
+
+@media(min-width:769px) and (max-width:2560px){
+  .dropdown{
+  display: none;
+}
+}
+
+/*body section*/
+.body{
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding-bottom: 30px;
+  margin-top: 5px;
+}
+
+.body .inner {
+  position: relative;
+  width: 75%;
+  margin: auto;
+}
+
+.mySlides, .mySlider1:not(:first-child), .mySlider2:not(:first-child), .mySlider3:not(:first-child), .mySlider4:not(:first-child), .mySlider5:not(:first-child), .mySlider6:not(:first-child) {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: rgb(111, 247, 217);
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  top: 25px;
+}
+
+.body .mySlides img{
+  border: none;
+  height: 75vh;
+}
+
+.dot, .dots1, .dots2, .dots3, .dots4, .dots5, .dots6 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.Active, .dot:hover, .dots1:hover, .dots2:hover, .dots3:hover, .dots4:hover, .dots5:hover, .dots6:hover{
+  background-color: rgba(116, 231, 193, 0.952);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.category{
+  background-color: rgb(158, 218, 198);
+  position: relative;
+  display: table-row;
+  width: 100%;
+  height: 100vh; 
+}
+
+.category .inner{
+  float: left;
+  width: 50%;
+  height: 55vh;
+}
+
+.category .aboutus{
+  background-color: #1b262c81 ;
+  width: 90%;
+  height: 80vh;
+  border-radius: 7px;
+}
+
+#appliance{
+  background-image: url(https://smartcanucks.ca/wp-content/uploads/2019/06/Screen-Shot-2019-06-27-at-9.08.12-AM.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+}
+
+#gadget{
+  background-image: url(https://www.iconicmnl.com/wp-content/uploads/2018/08/Top5HottestTechGadgets-696x664.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+}
+
+.aboutus .explore a{
+  color: rgb(127, 255, 212);  
+  text-decoration: none;
+ }
+
+.aboutus .explore{
+  border-radius: 7px;
+  height: 60px; 
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  background-color: #1b262cd8;
+  border: 2px groove rgba(44, 122, 96, 0.774);
+}
+
+.aboutus .explore:hover{
+  cursor: pointer;
+  background-color: #10222c;
+  border-color: rgb(127, 255, 212);
+}
+
+/*Appliances*/
+.body .appliances{
+  display: block;
+  margin: 40px;
+  width: 100%;
+  height: 100%;
+  float:none;
+}
+
+.body .appliances .cards{
+  display: table-cell;
+  float: left;
+  margin: 15px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px  rgb(6, 41, 29);
+  border: 3px groove rgba(8, 58, 42, 0.877);
+  width: 30%;
+  height: 60vh;
+  font-size: 16px;
+  font-family: 'Comfortaa', cursive;
+  background-image: radial-gradient(at top, #054b3b8c, rgba(215, 231, 227, 0.596));
+  color: silver;
+}
+
+.cards .heads{
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+}
+
+.cards .tails{
+  width: 100%;
+  height: 40%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+.cards .tails table, .cards .tails table{
+  border-top: 5px inset rgb(50, 182, 138);
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.cards tr td{
+  width: 50%;
+  height: 50%;
+}
+
+.body .objfit{
+  object-fit: contain;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.addtocart, .describe{
+  border-radius: 7px;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  background-image: radial-gradient(#1b262c 50%, rgb(138, 233, 201) 95%);
+  color: rgb(127, 255, 212);
+  width: 100%;
+}
+
+.addtocart:hover, .describe:hover{
+  cursor: pointer;
+  background-image: radial-gradient(#1b262c 80%, rgb(138, 233, 201) 95%);
+  border-radius: 7px;
+  color: rgb(127, 255, 212);
+  border-color:  rgb(127, 255, 212);
+}
+
+
+/*Modal for details*/
+.modal{
+    display: none; 
+    position: fixed;
+    z-index: 10; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+    color: rgb(127, 255, 212);   
+    font-size: 22px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.modal-content{
+    display: table;
+    background-color: #24353fc9;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(127, 255, 212);
+    width: 80%;
+    height: 80vh;
+    border-radius: 7px;
+}
+
+.close{
+    position: relative;
+    color: rgb(127, 255, 212);
+    float: right;
+    font-size: 44px;
+    font-weight: bold;
+    margin-left: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.close:hover, 
+.close:focus{
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.heading{
+  display: table-cell;
+  width: 50%;
+  padding: 25px; 
+  height: 80vh;
+  vertical-align: middle;
+}
+
+.heading .inner{
+  object-fit: fill;
+  object-position: center;
+}
+
+.prevs, .nexts {
+  margin: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color:  rgb(127, 255, 212);
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prevs{  
+  left: -20px;
+}
+
+.nexts{
+  border-radius: 3px 0 0 3px;
+  right: -20px;
+}
+
+.prevs:hover, .nexts:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal .inner p{
+  color: silver;
+}
+
+/*Contact Us*/
+.contact{
+  display: table;
+  padding: 30px;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  font-family: 'Comfortaa', cursive;
+  color: rgba(125, 245, 205, 0.884);
+  background-image: url("https://www.idfreshfood.com/wp-content/uploads/2017/09/contact_us_2.jpg");
+  background-size: cover;
+  background-position: center center;
+  font-size: 24px;
+}
+
+.contact .inner{
+  display: table-cell;
+  color: rgb(214, 241, 233);
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
+  vertical-align: middle;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.contact form table{
+  text-align: center; 
+  width: 100%;
+  height: 100%;
+}
+
+.contact form table #reset{
+  border: 2px solid white;
+  border-radius: 40px; 
+  display: relative;
+  width: 44px; 
+  height: 44px;
+  vertical-align: middle;
+  align-self: center;
+  cursor: pointer;
+}
+
+#name, #mail1, #mobile{
+  width: 95%;
+  height: 45px;
+  border-radius: 7px; 
+}
+
+#query{
+  width: 95%;
+  height: 100px;
+}
+
+.contact .label{
+  width: 45%;
+  height: 100px;
+}
+
+.contact #submit{
+  background-color: rgba(97, 216, 216, 0.664);
+  cursor: pointer;
+  width: 60%;
+  height: 40px;
+  border: 0px groove;
+  border-radius: 7px;
+  font-size: 22px;
+}
+
+.contact #submit:hover{
+  background-color: rgba(135, 250, 250, 0.664);
+}
+
+
+/*About us*/
+.aboutus{
+  background-color: rgba(0, 0, 0, 0.57);
+  margin: 50px;
+  width: 90%;
+  height: 40vh;
+  font-family: 'Comfortaa', cursive;
+  color: rgba(125, 245, 205, 0.884);  
+  font-size: 24px;
+  align-content: center;
+  border: 5px solid transparent;
+}
+
+.aboutus tr td{
+  width: 50%;
+  height: 100%;
+}
+
+.aboutus tr td p{
+  font-size: 18px;
+  color: rgba(209, 235, 226, 0.993);
+  text-align: justify;
+}
+
+#teampic{
+  background-image: url(https://i.ytimg.com/vi/LLee9uQHtl0/maxresdefault.jpg);
+  background-size: contain;
+  background-position: center center;
+}
+
+#mypic{
+  background-image: url(https://cdn1.vectorstock.com/i/1000x1000/78/45/hard-working-businesswoman-gets-an-idea-vector-16037845.jpg);/*(https://getintopik.com/wp-content/uploads/2019/10/Cute-Girl-Animated-iPhone-Wallpaper-Free_1.jpg);*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
+
+/*footer*/
+.footer{
+  background-color: #1b262c ;
+  display: table;
+  width: 100%;
+  height: 30vh; 
+  position: relative;
+  font-family: 'Comfortaa', cursive;
+  padding: 50px;
+  color: silver;
+}
+
+.footer h3{
+  display: table-header-group;
+  position: relative;
+  font-size: 20px;
+  color: rgb(226, 252, 246);
+}
+
+.footer .inner{
+  display: table-row;
+}
+
+.footer .inner ul{
+  display: table-row;
+  background-color: rgba(88, 101, 104, 0.363);
+}
+
+.footer .inner ul li img{
+  width: 35px;
+  height: 35px;
+  border-radius: 10px; 
+  border: none;
+}
+
+.footer .inner ul li{  
+  padding: 0.5em ;
+  list-style-type:none;
+  float: left;
+}
+

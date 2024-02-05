@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shoptronics</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div id="logo">
+        Shoptronix
+        </div>
+        <ul>
+          <li id="login"><button onclick="openForm()">Login</button></li>
+          <li id="signup"><button onclick="openForm2()">Signup</button></li>
+          <li><button id="cart"></button></li>
+        </ul>
+      </nav>
+
+      <div class="form1" id="loginForm">
+        <form action="" class="inner">
+          <h1>Login to ShoptroniX</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="mail"required/>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pass" id="pass"required/>
+          <br>
+          <button type="submit" class="btn" onclick="validationForm1()">Log In</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <div class="form2" id="signupForm">
+        <form action="" class="inner">
+          <h1>Signup to ShoptroniX</h1>
+          <label for="name"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="name" id="nam" required/>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text1" placeholder="Enter Email" name="email" id="emai" required/>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pass" id="pas" required/>
+          <br>
+          <button type="submit" class="btn" onclick="validationForm2()">Sign Up</button>
+          <button type="submit" class="btn cancel" onclick="closeForm2()">Close</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="menu">
+      <nav id="menu">
+       <ul>
+          <li><input id="search" placeholder="Search.." type="text"></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="Appliances.html">Electronics</a></li>
+          <li><a href="Gadgets.html">Gadgets</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="dropdown">
+        <img class="dropbtn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"/>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Appliances.html">Electronics</a>
+            <a href="Gadgets.html">Gadgets</a>
+            <a href="ContactUs.html">Contact Us</a>
+          </div>
+      </nav>
+    </section>
+
+    <section class="body">
+      <div class="inner">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="https://www.shopickr.com/wp-content/uploads/2015/10/amazon-india-diwali-electronics-sale-2015.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="https://assetscdn1.paytm.com/images/catalog/view_item/576783/1597724044265.jpg?imwidth=1600&impolicy=hq" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="https://assetscdn1.paytm.com/images/catalog/view_item/591173/1597216813796.jpg?imwidth=480&impolicy=hq" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="https://assetscdn1.paytm.com/images/catalog/view_item/598947/1598854814491.jpg?imwidth=480&impolicy=hq" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="https://assetscdn1.paytm.com/images/catalog/view_item/596510/1598854819497.jpg?imwidth=480&impolicy=hq" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="https://mi0.rightinthebox.com/images/dfp/202008/mini_5588_3_en.gif?22" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" >&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </section>
+
+    <section class="category">
+      <center>
+      <div class="inner">    
+        <center>      
+        <table class="aboutus" cellpadding="20px"
+  cellspacing="20px">
+          <tr>
+            <td id="appliance"><img src=""/>
+          </tr>
+          <tr>
+            <td class="explore"><a href="Appliances.html">Explore Now-></a></td>     
+          </tr> 
+        </table>
+        </center>
+      </div>
+
+      <div class="inner">    
+        <center>      
+        <table class="aboutus" cellpadding="20px"
+  cellspacing="20px">
+          <tr>
+            <td id="gadget"><img src="">
+          </tr>
+          <tr>
+            <td class="explore"><a href="Gadgets.html">Explore Now-></a></td>
+          </tr> 
+        </table>
+        </center>
+      </div>
+      </center>
+    </section>
+
+    <section class="footer">
+      <center><H3>Follow and Support Us:</H3>
+      <br>
+      <div class="inner">        
+        <ul>
+            <li>
+                <a href="mailto:name@rapidtables.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMJ9Fonmvh_hRtq5yru8MQp_1fXcUf8TZwHQ&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="tel:918955000000"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGrrDQxVuCEGEGlVqx1iLaCoKAoLnzHycRPA&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/parnika-gupta-58096515a/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzduhS0f-pleGeb5x8I20yDUgs6YmhpraDHg&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="https://hackaday.io/parnika.gupta"><img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Hackaday_logo.png"></a>
+            </li>
+            <li>
+                <a href="https://www.slideshare.net/ParnikaGupta5"><img src="https://cdn.iconscout.com/icon/free/png-512/slideshare-9-569417.png"></a>
+            </li>
+            <li>
+                <a href="https://github.com/VeronicaGupta"><img src="https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/parnika.gupta.52/"><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-2019-square1-512.png"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ver_onika_/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQd1N9pfrsRhZYonrxFOWmuGvFwp713V9Jqjg&usqp=CAU"></a>
+            </li>
+        </ul>
+      </div>
+      </center>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

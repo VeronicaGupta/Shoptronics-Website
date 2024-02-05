@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shoptronics</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div id="logo">
+        Shoptronix
+        </div>
+        <ul>
+          <li id="login"><button onclick="openForm()">Log In</button></li>
+          <li id="signup"><button onclick="openForm2()">Sign Up</button></li>
+          <li><button id="cart"></button></li>
+        </ul>
+      </nav>
+
+      <div class="form1" id="loginForm">
+        <form action="" class="inner">
+          <h1>Login to ShoptroniX</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="mail"required/>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pass" id="pass"required/>
+          <br>
+          <button type="submit" class="btn" onclick="validationForm1()">Log In</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <div class="form2" id="signupForm">
+        <form action="" class="inner">
+          <h1>SignUp to ShoptroniX</h1>
+          <label for="name"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="name" id="nam" required/>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text1" placeholder="Enter Email" name="email" id="emai" required/>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pass" id="pas" required/>
+          <br>
+          <button type="submit" class="btn" onclick="validationForm2()">Sign Up</button>
+          <button type="submit" class="btn cancel" onclick="closeForm2()">Close</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="menu">
+      <nav id="menu">
+        <ul>
+          <li><input id="search" placeholder="Search.." type="text"></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="AboutUs.html">About Us</a></li>
+          <li><a href="Appliances.html">Electronics</a></li>
+          <li><a href="Gadgets.html">Gadgets</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="dropdown">
+        <img class="dropbtn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"/>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="Appliances.html">Electronics</a>
+            <a href="Gadgets.html">Gadgets</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="AboutUs.html">About Us</a>
+          </div>
+      </nav>
+    </section>
+
+    <section class="body">
+      <div class="inner">  
+        <center>
+        <table class="aboutus" cellpadding="10px">
+        <tr>
+          <td id="teampic"><img src=""/>
+          <td>Shoptronix Team : India<br>
+            <p>
+              Our Aim: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </tr>
+      </table>
+      <table class="aboutus" cellpadding="10px">
+        <tr>
+          <td>Lead Designer : Parnika Gupta<br>
+            <p>
+              UI/UX Designer<br>
+              Web Designer<br>
+              Electronics Engineer 
+            </p>
+          <td id="mypic"><img src="">
+        </tr> 
+      </table>
+        </center>
+      </div>
+    </section>
+
+    <section class="footer">
+      <center><H3>Follow and Support Us:</H3>
+      <br>
+      <div class="inner">        
+        <ul>
+            <li>
+                <a href="mailto:name@rapidtables.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMJ9Fonmvh_hRtq5yru8MQp_1fXcUf8TZwHQ&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="tel:918955000000"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGrrDQxVuCEGEGlVqx1iLaCoKAoLnzHycRPA&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/parnika-gupta-58096515a/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzduhS0f-pleGeb5x8I20yDUgs6YmhpraDHg&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="https://hackaday.io/parnika.gupta"><img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Hackaday_logo.png"></a>
+            </li>
+            <li>
+                <a href="https://www.slideshare.net/ParnikaGupta5"><img src="https://cdn.iconscout.com/icon/free/png-512/slideshare-9-569417.png"></a>
+            </li>
+            <li>
+                <a href="https://github.com/VeronicaGupta"><img src="https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/parnika.gupta.52/"><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-2019-square1-512.png"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ver_onika_/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQd1N9pfrsRhZYonrxFOWmuGvFwp713V9Jqjg&usqp=CAU"></a>
+            </li>
+        </ul>
+      </div>
+      </center>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shoptronics</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div id="logo">
+        Shoptronix
+        </div>
+        <ul>
+          <li id="login"><button onclick="openForm()">Log In</button></li>
+          <li id="signup"><button onclick="openForm2()">Sign Up</button></li>
+          <li><button id="cart"></button></li>
+        </ul>
+      </nav>
+
+      <div class="form1" id="loginForm">
+        <form action="" class="inner">
+          <h1>Login to ShoptroniX</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="mail"required/>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pass" id="pass"required/>
+          <br>
+          <button type="submit" class="btn" onclick="validationForm1()">Log In</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <div class="form2" id="signupForm">
+        <form action="" class="inner">
+          <h1>SignUp to ShoptroniX</h1>
+          <label for="name"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="name" id="nam" required/>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text1" placeholder="Enter Email" name="email" id="emai" required/>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pass" id="pas" required/>
+          <br>
+          <button type="submit" class="btn" onclick="validationForm2()">Sign Up</button>
+          <button type="submit" class="btn cancel" onclick="closeForm2()">Close</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="menu">
+      <nav id="menu">
+       <ul>
+          <li><input id="search" placeholder="Search.." type="text"></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li class="active"><a href="Appliances.html">Electronics</a></li>
+          <li><a href="Gadgets.html">Gadgets</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="dropdown">
+        <img class="dropbtn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"/>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Appliances.html">Electronics</a>
+            <a href="Gadgets.html">Gadgets</a>
+            <a href="ContactUs.html">Contact Us</a>
+          </div>
+      </nav>
+    </section>
+
+    <section class="body">
+      <div class="appliances" align="left">
+          <div class="cards">
+            <div class="heads" align="top">
+              <img src="https://assets.croma.com/medias/sys_master/images/images/h63/h79/8968173256734/228224.png" class="objfit">
+            </div>
+            <div class="tails" align="bottom">
+              <table cellpadding="5px" cellspacing="5px">
+                <tr>
+                  <td colspan="2" class="details">Whirlpool 355 Litres Double Door Refrigerator (Adaptive Intellisense Technology Omega Steel)<br><br>Product Id: 228224</td>
+                </tr>
+                <tr>
+                  <td class="rate" align="left">Rating: 4.3</td>
+                  <td class="price" align="right">₹37,500.00 &nbsp;<strike>₹47,250.00</strike></td>
+                </tr>
+                <tr>
+                  <td><button class="describe" id="one" onclick="openModal('myModal1'); ShowSlider('mySlider1','dots1')">Show Details</button></td> 
+                  <td align="right"><button class="addtocart" onclick="addtocart()">Add to Cart</button></td>             
+                </tr>
+              </table>
+            </div>
+          </div>
+          <section id="myModal1" class="modal">
+            <div class="modal-content">
+              <div class="heading">
+                <div class="inner">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlider1 fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h63/h79/8968173256734/228224.png" style="width:100%">
+                </div>
+
+                <div class="mySlider1 fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/hfe/he7/8968176074782/-1200Wx1200H-228224-2-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider1 fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h81/h5b/8968185970718/-1200Wx1200H-228224-3-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider1 fade">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/hd5/h07/8968185839646/-1200Wx1200H-228224-4-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider1 fade">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/hcd/h98/8968175026206/-1200Wx1200H-228224-9-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider1 fade">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h46/h45/8968175288350/-1200Wx1200H-228224-8-300Wx300H.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prevs" onclick="plusSlider(-1,'mySlider1','dots1')">&#10094;</a>
+                <a class="nexts" onclick="plusSlider(1,'mySlider1','dots1')" >&#10095;</a>
+              </div>
+              <br>
+
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dots1" onclick="currentSlider(1,'mySlider1','dots1')"></span>
+                <span class="dots1" onclick="currentSlider(2,'mySlider1','dots1')"></span>
+                <span class="dots1" onclick="currentSlider(3,'mySlider1','dots1')"></span>
+                <span class="dots1" onclick="currentSlider(4,'mySlider1','dots1')"></span>
+                <span class="dots1" onclick="currentSlider(5,'mySlider1','dots1')"></span>
+                <span class="dots1" onclick="currentSlider(6,'mySlider1','dots1')"></span>
+              </div>
+
+              </div>
+              <div>
+              </div>
+
+              <div class="inner" align-"left">
+                <button class="close" title="Close" id="close1" align="top" onclick="closeModal('myModal1')">&nbsp; &times; &nbsp;</button>
+                <br><br>
+                <b><u><i>Whirlpool 355 Litres 3 Star Frost Free Inverter Double Door Refrigerator </b></u></i><br><br><br>
+                                          
+                    Product Id: 228224<br><br>
+                    
+                <p>
+                    Price:  ₹37,500.00 21% OFF <br>
+                    MRP: <strike>₹47,250.00</strike> (inclusive of all taxes)<br><br>
+
+                    <u>Key features</u>:<br>
+                    355 Litres, 3 Star, Inverter Technology<br>
+                    Frost Free Defrost System<br>
+                    Fridge Top - Freezer Bottom<br>
+                    Dimensions -63.2 x 71.1 x 180.1 cms<br>
+                    Frost Free Cooling Technology<br>
+                    12 Months Warranty, 10 Years Warranty on Compressor<br>
+                </p>
+                <button class="addtocart" onclick="addtocart()">Add to Cart</button>
+              </div>
+            </div>
+          </section>   
+
+          <div class="cards">
+            <div class="heads">
+              <img src="https://assets.croma.com/medias/sys_master/images/images/h50/h4a/8894732402718/-1200Wx1200H-224139-300Wx300H.png" class="objfit">
+            </div>
+            <div class="tails">
+              <table cellpadding="5px" cellspacing="5px">
+                <tr>
+                  <td colspan="2" class="details">GE - 30" Stainless Steel Gas Slide-In Sealed Burner Range <br><br>Model: JGSS66SELSS</td>
+                </tr>
+                <tr>
+                  <td class="rate" align="left">Rating: 4.3</td>
+                  <td class="price" align="right">Rs 38,500 &nbsp;<strike>Rs 50,000</strike></td>
+                </tr>
+                <tr>
+                  <td><button class="describe" id="two" onclick="openModal('myModal2'); ShowSlider('mySlider2','dots2')">Show Details</button></td> 
+                  <td align="right"><button class="addtocart" onclick="addtocart()">Add to Cart</button></td>             
+                </tr>
+              </table>
+            </div>
+          </div>
+          <section id="myModal2" class="modal">
+            <div class="modal-content">
+              <div class="heading" align="left">
+                <div class="inner">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlider2 fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h50/h4a/8894732402718/-1200Wx1200H-224139-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider2 fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/hbc/h82/8906783391774/-100Wx1200H-224139-1-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider2 fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/hfb/he3/8906785226782/-1200Wx1200H-224139-2-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider2 fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h6f/hf1/8906785751070/-1200Wx1200H-224139-3-300Wx300H.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prevs" onclick="plusSlider(-1,'mySlider2','dots2')">&#10094;</a>
+                <a class="nexts" onclick="plusSlider(1,'mySlider2','dots2')" >&#10095;</a>
+              </div>
+              <br>
+
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dots2" onclick="currentSlider(1,'mySlider2','dots2')"></span>
+                <span class="dots2" onclick="currentSlider(2,'mySlider2','dots2')"></span>
+                <span class="dots2" onclick="currentSlider(3,'mySlider2','dots2')"></span>
+                <span class="dots2" onclick="currentSlider(4,'mySlider2','dots2')"></span>
+                <span class="dots2" onclick="currentSlider(5,'mySlider2','dots2')"></span>
+              </div>
+
+              </div>
+              <div>
+              </div>
+
+              <div class="inner" align="left">
+                <button class="close" title="Close" id="close2" align="top" onclick="closeModal('myModal2')">&nbsp; &times; &nbsp;</button>
+                <br><br>
+                <b><u><i>Blue Star 1.5 Ton 3 Star Inverter Split AC (IC318YATU, Copper Condenser, White)</b></u></i><br>
+                Product Id: 228224<br><br>
+                <p>                     
+                    Price:  ₹47,500.00 21% OFF <br>
+                    MRP: <strike>₹57,250.00</strike> (inclusive of all taxes)<br><br>
+
+                    <u>Key features</u>:<br>
+                    355 Litres, 3 Star, Inverter Technology<br>
+                    Frost Free Defrost System<br>
+                    Fridge Top - Freezer Bottom<br>
+                    Dimensions -63.2 x 71.1 x 180.1 cms<br>
+                    Frost Free Cooling Technology<br>
+                    12 Months Warranty, 10 Years Warranty on Compressor<br>
+                </p>
+                <button class="addtocart" onclick="addtocart()">Add to Cart</button>
+              </div>
+            </div>
+            </section>
+
+          <div class="cards">
+            <div class="heads">
+              <img src="https://assets.croma.com/medias/sys_master/images/images/h5b/hdc/8965804982302/-1200Wx1200H-227587-300Wx300H.png" class="objfit">
+            </div>
+            <div class="tails">
+              <table cellpadding="5px" cellspacing="5px">
+                <tr>
+                  <td colspan="2" class="details">iLife V50 Robot Vacuum Cleaner with Dry Mopping (DW-GIEL-WE9Q, Light Gold)<br>
+                  <br>Model: JGSS66SELSS</td>
+                </tr>
+                <tr>
+                  <td class="rate" align="left">Rating: 4.2</td>
+                  <td class="price" align="right">Rs 16,800 &nbsp;<strike>Rs 22,700</strike></td>
+                </tr>
+                <tr>
+                  <td><button class="describe" id="three" onclick="openModal('myModal3'); ShowSlider('mySlider3','dots3')">Show Details</button></td> 
+                  <td align="right"><button class="addtocart" onclick="addtocart()">Add to Cart</button></td> 
+                </tr>
+              </table>
+            </div>
+          </div>
+          <section id="myModal3" class="modal">
+            <div class="modal-content">
+              <div class="heading">
+                <div class="inner">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlider3 fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h5b/hdc/8965804982302/-1200Wx1200H-227587-300Wx300H.png" style="width:100%">
+                </div>
+
+                <div class="mySlider3 fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h8e/hbf/8965764218910/227587-1.png" style="width:100%">
+                </div>
+
+                <div class="mySlider3 fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h3e/hbe/8965763989534/227587-2.png" style="width:100%">
+                </div>
+
+                <div class="mySlider3 fade">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h29/h90/8965764186142/227587-3.png" style="width:100%">
+                </div>
+
+                <div class="mySlider3 fade">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h8e/h01/8965764055070/227587-5.png" style="width:100%">
+                </div>
+
+                <div class="mySlider3 fade">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="https://assets.croma.com/medias/sys_master/images/images/h2e/hc2/8965764120606/227587-4.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prevs" onclick="plusSlider(-1,'mySlider3','dots3')">&#10094;</a>
+                <a class="nexts" onclick="plusSlider(1,'mySlider3','dots3')" >&#10095;</a>
+              </div>
+              <br>
+
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dots3" onclick="currentSlider(1,'mySlider3','dots3')"></span>
+                <span class="dots3" onclick="currentSlider(2,'mySlider3','dots3')"></span>
+                <span class="dots3" onclick="currentSlider(3,'mySlider3','dots3')"></span>
+                <span class="dots3" onclick="currentSlider(4,'mySlider3','dots3')"></span>
+                <span class="dots3" onclick="currentSlider(5,'mySlider3','dots3')"></span>
+                <span class="dots3" onclick="currentSlider(6,'mySlider3','dots3')"></span>
+              </div>
+
+              </div>
+              <div>
+              </div>
+
+              <div class="inner" align="left">
+                <button class="close" title="Close" id="close3" align="top" onclick="closeModal('myModal3')">&nbsp; &times; &nbsp;</button>
+                <br><br>
+                <b><u><i>iLife V50 Robot Vacuum Cleaner with Dry Mopping (DW-GIEL-WE9Q, Light Gold)</b></u></i><br><br><br>
+                                          
+                    Product Id: 228224<br><br>
+                    
+                <p>
+                    Price:  ₹16,800.00 27% OFF <br>
+                    MRP: <strike>₹22,700.00</strike> (inclusive of all taxes)<br><br>
+
+                    <u>Key features</u>:<br>
+                    355 Litres, 3 Star, Inverter Technology<br>
+                    Frost Free Defrost System<br>
+                    Fridge Top - Freezer Bottom<br>
+                    Dimensions -63.2 x 71.1 x 180.1 cms<br>
+                    Frost Free Cooling Technology<br>
+                    12 Months Warranty, 10 Years Warranty on Compressor<br>
+                </p>
+                <button class="addtocart" onclick="addtocart()">Add to Cart</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="cards">
+            <div class="heads">
+              <img src="https://assets.croma.com/medias/sys_master/images/images/ha1/hf9/8938228678686/-1200Wx1200H-217483-2-300Wx300H.png" class="objfit">
+            </div>
+            <div class="tails">
+              <table cellpadding="5px" cellspacing="5px">
+                <tr>
+                  <td colspan="2" class="details">iLife V50 Robot Vacuum Cleaner with Dry Mopping (DW-GIEL-WE9Q, Light Gold)<br>
+                  <br>Model: JGSS66SELSS</td>
+                </tr>
+                <tr>
+                  <td class="rate" align="left">Rating: 4.2</td>
+                  <td class="price" align="right">Rs 16,800 &nbsp;<strike>Rs 22,700</strike></td>
+                </tr>
+                <tr>
+                  <td><button class="describe">Show Details</button></td> 
+                  <td align="right"><button class="addtocart" onclick="addtocart()">Add to Cart</button></td> 
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          <div class="cards">
+            <div class="heads">
+              <img src="https://assets.croma.com/medias/sys_master/images/images/h8b/h15/8886623567902/-1200Wx1200H-223122-96Wx96H.webp" class="objfit">
+            </div>
+            <div class="tails">
+              <table cellpadding="5px" cellspacing="5px">
+                <tr>
+                  <td colspan="2" class="details">iLife V50 Robot Vacuum Cleaner with Dry Mopping (DW-GIEL-WE9Q, Light Gold)<br>
+                  <br>Model: JGSS66SELSS</td>
+                </tr>
+                <tr>
+                  <td class="rate" align="left">Rating: 4.2</td>
+                  <td class="price" align="right">Rs 16,800 &nbsp;<strike>Rs 22,700</strike></td>
+                </tr>
+                <tr>
+                  <td><button class="describe">Show Details</button></td> 
+                  <td align="right"><button class="addtocart" onclick="addtocart()">Add to Cart</button></td> 
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          <div class="cards">
+            <div class="heads">
+              <img src="https://assets.croma.com/medias/sys_master/images/images/h08/h81/8952066048030/-1200Wx1200H-222854-300Wx300H.png" class="objfit">
+            </div>
+            <div class="tails">
+              <table cellpadding="5px" cellspacing="5px">
+                <tr>
+                  <td colspan="2" class="details">iLife V50 Robot Vacuum Cleaner with Dry Mopping (DW-GIEL-WE9Q, Light Gold)<br>
+                  <br>Model: JGSS66SELSS</td>
+                </tr>
+                <tr>
+                  <td class="rate" align="left">Rating: 4.2</td>
+                  <td class="price" align="right">Rs 16,800 &nbsp;<strike>Rs 22,700</strike></td>
+                </tr>
+                <tr>
+                  <td><button class="describe">Show Details</button></td> 
+                  <td align="right"><button class="addtocart" onclick="addtocart()">Add to Cart</button></td> 
+                </tr>
+              </table>
+            </div>
+          </div>
+      </div>     
+    </section>
+
+    <section class="footer">
+      <center><H3>Follow and Support Us:</H3>
+      <br>
+      <div class="inner">        
+        <ul>
+            <li>
+                <a href="mailto:name@rapidtables.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMJ9Fonmvh_hRtq5yru8MQp_1fXcUf8TZwHQ&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="tel:918955000000"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGrrDQxVuCEGEGlVqx1iLaCoKAoLnzHycRPA&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/parnika-gupta-58096515a/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzduhS0f-pleGeb5x8I20yDUgs6YmhpraDHg&usqp=CAU"></a>
+            </li>
+            <li>
+                <a href="https://hackaday.io/parnika.gupta"><img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Hackaday_logo.png"></a>
+            </li>
+            <li>
+                <a href="https://www.slideshare.net/ParnikaGupta5"><img src="https://cdn.iconscout.com/icon/free/png-512/slideshare-9-569417.png"></a>
+            </li>
+            <li>
+                <a href="https://github.com/VeronicaGupta"><img src="https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/parnika.gupta.52/"><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-2019-square1-512.png"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ver_onika_/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQd1N9pfrsRhZYonrxFOWmuGvFwp713V9Jqjg&usqp=CAU"></a>
+            </li>
+        </ul>
+      </div>
+      </center>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
